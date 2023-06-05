@@ -1,0 +1,45 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'styles/Events.css' %}" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <div class="s_box">
+      <div class="head">
+        <h2 class="list">Scheduled List</h2>
+        <a href="{% url 'schedular2' %}">Add</a>
+      </div>
+      <table>
+        <thead>
+          <th>ID</th>
+          <th>Host name</th>
+          <th>Purpose</th>
+          <th>Date</th>
+          <th>Timing</th>
+          <th>Place</th>
+          <th>Link</th>
+        </thead>
+        <tbody>
+          {% for x in data %}
+          <tr>
+            <td>{{ x.E_id }}</td>
+            <td>{{ x.name }}</td>
+            <td>{{ x.purpose }}</td>
+            <td>{{ x.date}}</td>
+            <td>{{ x.time}}</td>
+            <td>{{ x.place}}</td>
+            <td><a href="{{x.link}}">link</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

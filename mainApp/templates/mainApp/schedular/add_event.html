@@ -1,0 +1,66 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link href="{% static 'styles/Add.css' %}" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    <form action="{% url 'schedular2' %}" method="post">
+      <div class="Form">
+        {% csrf_token %}
+        <h1>SCHEDULE MEET</h1>
+        <div class="lable_type">
+          <label for="name">Host name :</label>
+          <input type="text" name="name" class="lable_control" />
+        </div>
+
+        <div class="lable_type">
+          <label for="purpose">Purpose :</label>
+          <textarea
+            id="purpose"
+            name="purpose"
+            name="Topic Tasks/Activities"
+            rows="5"
+            cols="40"
+            class="lable_control"
+          ></textarea>
+        </div>
+        <div class="lable_type">
+          <label for="date">Date :</label>
+          <input type="date" name="date" class="lable_control" />
+        </div>
+        <div class="lable_type">
+          <label for="time">Timing :</label>
+          <input type="time" class="lable_control" name="time" />
+        </div>
+        <div class="lable_type">
+          <label for="place">Place :</label>
+          <textarea
+            id="place"
+            name="place"
+            name="Topic Tasks/Activities"
+            rows="3"
+            cols="40"
+            class="lable_control"
+          ></textarea>
+        </div>
+
+        <div class="lable_type">
+          <label for="text">Meet Link:</label>
+          <input type="text" name="link" class="lable_control" />
+        </div>
+
+        <div id="Submit">
+          <input type="submit" value="SUBMIT" class="lable_control" />
+          <a href="{% url 'schedular1' %}">View List</a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
