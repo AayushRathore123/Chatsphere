@@ -3,12 +3,13 @@ This project is a web based application on Django framework. Chatsphere is a web
 
 + Users have to login to create a room or join one.
 + User can create a profile, if not already having an account, and this profile information in stored in sqlite3 database.
-+ Users can search for existing rooms and start discussing or can create a room of their own.
++ Users can search for existing rooms and start discussing
++ Users can create a room of their own and can edit or delete it.
 + Users can browse all the rooms based on a certain topic in the "Browse Topics" section.
 + Users can see the most recent activities on the site like who messaged in which room and what was the message in the "Recent Activities" section.
 + Users can view their or other's profile.
-+ User can enter details and schedule a meeting
-+ User can see all the scheduled meet
++ Users can enter details and schedule a meeting
++ Users can see all the scheduled meet
 
 ## Getting Started
 ### Environment Development
