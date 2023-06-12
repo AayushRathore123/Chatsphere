@@ -11,6 +11,9 @@ This project is a web based application on Django framework. Chatsphere is a web
 + Users can enter details and schedule a meeting
 + Users can see all the scheduled meet
 
+
+https://github.com/AayushRathore123/Chatsphere/assets/110801658/70840655-6e13-4cb9-b897-4bf104d09f5f
+
 ## Getting Started
 ### Environment Development
 In the project directory-
@@ -24,6 +27,10 @@ In the project directory-
   + envname\scripts\activate
   + pip install -r requirements.txt
   + python manage.py runserver
+
+
+
+
 #### <br/> open http://127.0.0.1:8000/ to see it in your browser
 
 ## Screenshots
