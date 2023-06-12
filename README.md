@@ -11,7 +11,7 @@ This project is a web based application on Django framework. Chatsphere is a web
 + Users can enter details and schedule a meeting
 + Users can see all the scheduled meet
 
-
+## Screen Recording
 https://github.com/AayushRathore123/Chatsphere/assets/110801658/70840655-6e13-4cb9-b897-4bf104d09f5f
 
 ## Getting Started
